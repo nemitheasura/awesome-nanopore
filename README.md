@@ -122,6 +122,9 @@ List of software packages for Nanopore sequencing data analysis, including basec
 ### Reads simulation
 - [NanoSim](https://github.com/bcgsc/NanoSim) - [Python] - [NanoSim: nanopore sequence read simulator based on statistical characterization.](https://doi.org/10.1093/gigascience/gix010), [Trans-NanoSim characterizes and simulates nanopore RNA-sequencing data.](https://academic.oup.com/gigascience/article/9/6/giaa061/5855462?login=true), [Characterization and simulation of metagenomic nanopore sequencing data with Meta-NanoSim.](https://academic.oup.com/gigascience/article/doi/10.1093/gigascience/giad013/7080817?login=true)
 
+### Coverage simulation
+- [esloco](https://github.com/aweich/esloco) - [Python] - [esloco: simulation-based estimation of local coverage in long-read DNA sequencing](https://academic.oup.com/bioinformatics/advance-article/doi/10.1093/bioinformatics/btag009/8418384)
+
 ## Contributing
 We welcome contributions and suggestions! Please follow the steps below to contribute:
 1. Fork this repository
