@@ -124,6 +124,10 @@ List of software packages for Nanopore sequencing data analysis, including basec
 ### Coverage simulation
 - [esloco](https://github.com/aweich/esloco) - [Python] - [esloco: simulation-based estimation of local coverage in long-read DNA sequencing](https://academic.oup.com/bioinformatics/advance-article/doi/10.1093/bioinformatics/btag009/8418384)
 
+### Polishing, Error correction
+- [Medaka](https://github.com/nanoporetech/medaka) - [Python] - ONT's official polisher
+- [Herro](https://github.com/lbcb-sci/herro) - [Rust] - [Telomere-to-Telomere Assembly Using HERRO-Corrected Simplex Nanopore Reads](https://www.nature.com/articles/s41586-026-10563-y)
+
 ## Pipelines
 
 - [MOP2](https://github.com/biocorecrg/MOP2) - [Nextflow] - [MasterOfPores: A Workflow for the Analysis of Oxford Nanopore Direct RNA Sequencing Datasets](https://www.frontiersin.org/articles/10.3389/fgene.2020.00211/full)
