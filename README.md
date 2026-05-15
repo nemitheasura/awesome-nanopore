@@ -30,7 +30,6 @@ List of software packages for Nanopore sequencing data analysis, including basec
 
 ### Segmentation
 
-- [tombo resquiggle](https://nanoporetech.github.io/tombo/resquiggle.html) - [Python] - [Re-squiggle Algorithm](https://nanoporetech.github.io/tombo/resquiggle.html).
 - [nanopolish eventalign](https://github.com/jts/nanopolish) - [C++] - [Detecting DNA cytosine methylation using nanopore sequencing](https://www.nature.com/articles/nmeth.4184).
 - [f5c eventalign](https://github.com/hasindu2008/f5c) - [C/C++/CUDA] - [GPU accelerated adaptive banded event alignment for rapid comparative nanopore signal analysis](https://bmcbioinformatics.biomedcentral.com/articles/10.1186/s12859-020-03697-x)
 - [f5c resquiggle](https://github.com/hasindu2008/f5c) - [C/C++/CUDA] - [GPU accelerated adaptive banded event alignment for rapid comparative nanopore signal analysis](https://bmcbioinformatics.biomedcentral.com/articles/10.1186/s12859-020-03697-x)
@@ -41,22 +40,18 @@ List of software packages for Nanopore sequencing data analysis, including basec
 ### DNA modification analysis
 
 - [modkit](https://github.com/nanoporetech/modkit) - [Rust] - Extract modified base calls from dorado BAM output to bedMethyl format, also calculate DMRs
-- [Megalodon](https://github.com/nanoporetech/megalodon) - [C++] - Research modified base caller which uses rerio, remora and a genome (deprecated by ONT 2023 for Dorado).
-- [modbam2bed](https://github.com/epi2me-labs/modbam2bed) - [C++] - Convert modified base calls from megalodon etc to bedMethyl format (deprecated by ONT 2023 for Modkit)
 - [nanopolish call-methylation](https://github.com/jts/nanopolish) - [C++] - [Detecting DNA cytosine methylation using nanopore sequencing](https://www.nature.com/articles/nmeth.4184).
 - [f5c call-methylation](https://github.com/hasindu2008/f5c) - [C/C++/CUDA] - [GPU accelerated adaptive banded event alignment for rapid comparative nanopore signal analysis](https://bmcbioinformatics.biomedcentral.com/articles/10.1186/s12859-020-03697-x)
 - [nanoNOMe](https://github.com/timplab/nanoNOMe) - [Python] - [Simultaneous profiling of chromatin accessibility and methylation on human cell lines with nanopore sequencing](https://www.nature.com/articles/s41592-020-01000-7).
 - [signalAlign](https://github.com/ArtRand/signalAlign) - [C] - [Mapping DNA methylation with high-throughput nanopore sequencing](https://www.nature.com/articles/nmeth.4189).
 - [mCaller](https://github.com/al-mcintyre/mCaller) - [Python] - [Single-molecule sequencing detection of N6-methyladenine in microbial reference materials](https://www.nature.com/articles/s41467-019-08289-9).
 - [DeepSignals](https://github.com/bioinfomaticsCSU/deepsignal) - [Python] - [DeepSignal: detecting DNA methylation state from Nanopore sequencing reads using deep-learning](https://academic.oup.com/bioinformatics/article/35/22/4586/5474907).
-- [tombo detect_modifications](https://nanoporetech.github.io/tombo/modified_base_detection.html) - [Python] - [(previously nanoraw)De novo Identification of DNA Modifications Enabled by Genome-Guided Nanopore Signal Processing](https://www.biorxiv.org/content/10.1101/094672v2).
 - [NanoMod](https://github.com/WGLab/NanoMod) - [Python] - [NanoMod: a computational tool to detect DNA modifications using Nanopore long-read sequencing data](https://bmcgenomics.biomedcentral.com/articles/10.1186/s12864-018-5372-8).
 
 ### RNA modification analysis
 
-- [tombo detect_modifications](https://nanoporetech.github.io/tombo/modified_base_detection.html) - [Python] - [Modified Base Detection](https://nanoporetech.github.io/tombo/modified_base_detection.html).
 - [MINES](https://github.com/YeoLab/MINES) - [Python] - [Direct RNA sequencing enables m6A detection in endogenous transcript isoforms at base specific resolution](https://rnajournal.cshlp.org/content/early/2019/10/17/rna.072785.119).
-- [EpiNano](https://github.com/enovoa/EpiNano) - [Python] - [Accurate detection of m6A RNA modifications in native RNA sequences](https://www.nature.com/articles/s41467-019-11713-9).
+- [EpiNano](https://github.com/novoalab/EpiNano) - [Python] - [Accurate detection of m6A RNA modifications in native RNA sequences](https://www.nature.com/articles/s41467-019-11713-9).
 - [Nanom6A](https://github.com/gaoyubang/nanom6A) - [Python] - [Quantitative profiling of N6-methyladenosine at single-base resolution in stem-differentiating xylem of Populus trichocarpa using Nanopore direct RNA sequencing](https://genomebiology.biomedcentral.com/articles/10.1186/s13059-020-02241-7).
 - [NanoNm](https://github.com/kaifuchenlab/NanoNm) - [Python] - [A Machine Learning Method to detect the 2'-O-methylation(Nm) in Nanopore direct RNA-seq](https://doi.org/10.1016/j.molcel.2024.04.011) 
 - [m6anet](https://github.com/GoekeLab/m6anet) - [Python] - [Detection of m6A from direct RNA sequencing using a multiple instance learning framework](https://www.nature.com/articles/s41592-022-01666-1).
@@ -104,7 +99,7 @@ List of software packages for Nanopore sequencing data analysis, including basec
 
 ### Genome Assembly
 - [Flye](https://github.com/fenderglass/Flye) - [C++] - Single molecule sequence assembler with good polishing capabilities
-- [Shasta](https://github.com/chanzuckerberg/shasta) - [C] - Very fast and capable nanopore assembler 
+- [Shasta](https://github.com/paoloshasta/shasta) - [C] - Very fast and capable nanopore assembler 
 
 ### Single-cell analysis
 
@@ -124,6 +119,13 @@ List of software packages for Nanopore sequencing data analysis, including basec
 
 ### Coverage simulation
 - [esloco](https://github.com/aweich/esloco) - [Python] - [esloco: simulation-based estimation of local coverage in long-read DNA sequencing](https://academic.oup.com/bioinformatics/advance-article/doi/10.1093/bioinformatics/btag009/8418384)
+
+## Deprecated / superseded
+- [tombo resquiggle](https://nanoporetech.github.io/tombo/resquiggle.html) - [Python] - [Re-squiggle Algorithm](https://nanoporetech.github.io/tombo/resquiggle.html). (Note - deprecated by ONT 2023, only compatible with RNA002 dRNA-seq chemistry & R9.4.1 chemistry)
+- [tombo detect_modifications](https://nanoporetech.github.io/tombo/modified_base_detection.html) - [Python] - [(previously nanoraw)De novo Identification of DNA Modifications Enabled by Genome-Guided Nanopore Signal Processing](https://www.biorxiv.org/content/10.1101/094672v2).
+- [Megalodon](https://github.com/nanoporetech/megalodon) - [C++] - Research modified base caller which uses rerio, remora and a genome (deprecated by ONT 2023 for Dorado).
+- [modbam2bed](https://github.com/epi2me-labs/modbam2bed) - [C++] - Convert modified base calls from megalodon etc to bedMethyl format (deprecated by ONT 2023 for Modkit)
+
 
 ## Contributing
 We welcome contributions and suggestions! Please follow the steps below to contribute:
