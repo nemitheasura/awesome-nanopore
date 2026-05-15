@@ -18,6 +18,22 @@ List of software packages for Nanopore sequencing data analysis, including basec
 - [Causalcall](https://github.com/scutbioinformatic/causalcall) - [Python] - [Causalcall: Nanopore Basecalling Using a Temporal Convolutional Network](https://www.frontiersin.org/articles/10.3389/fgene.2019.01332/full)
 - [Bonito](https://github.com/nanoporetech/bonito) - [Python] - A PyTorch Basecaller for Oxford Nanopore Reads (research, not production basecaller)
 
+### QC, preprocessing
+
+- [NanoPlot](https://github.com/wdecoster/nanoplot) - [HTML/Python] - [QC plotting tool for Nanopore reads](https://academic.oup.com/bioinformatics/article/39/5/btad311/7160911?login=false)
+- [Cramino](https://github.com/wdecoster/cramino) - [Rust] - A tool for quick quality assessment of cram and bam files, intended for long read sequencing
+
+### Alignment 
+
+- [minimap2](https://github.com/lh3/minimap2) - [C] - [Minimap2: pairwise alignment for nucleotide sequences](https://academic.oup.com/bioinformatics/article/34/18/3094/4994778)
+- [Winnowmap](https://github.com/marbl/winnowmap) - [C] - [Weighted minimizer sampling improves long read mapping](https://academic.oup.com/bioinformatics/article/36/Supplement_1/i111/5870473)
+
+### Variant, SV calling, Phasing
+
+- [Clair3](https://github.com/HKU-BAL/Clair3) - [Python/C++] - [Clair3-RNA: a deep learning-based small variant caller for long-read RNA sequencing data](https://www.nature.com/articles/s41467-025-67237-y)
+- [Sniffles](https://github.com/fritzsedlazeck/sniffles) - [Python] - [Detection of mosaic and population-level structural variants with Sniffles2](https://www.nature.com/articles/s41587-023-02024-y)
+- [whatshap](https://github.com/whatshap/whatshap) - [Python/C++] - [Read-Based Phasing and Analysis of Phased Variants with WhatsHap](https://link.springer.com/protocol/10.1007/978-1-0716-2819-5_8)
+
 ### Adaptive sampling / ReadUntil Real-time mapping / signal mapping
 
 - [Readfish](https://github.com/LooseLab/readfish) - [Python] - [Readfish enables targeted nanopore sequencing of gigabase-sized genomes](https://www.nature.com/articles/s41587-020-00746-x)
