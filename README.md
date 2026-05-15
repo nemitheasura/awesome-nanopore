@@ -126,6 +126,7 @@ List of software packages for Nanopore sequencing data analysis, including basec
 ## Pipelines
 
 - [MOP2](https://github.com/biocorecrg/MOP2) - [Nextflow] - [MasterOfPores: A Workflow for the Analysis of Oxford Nanopore Direct RNA Sequencing Datasets](https://www.frontiersin.org/articles/10.3389/fgene.2020.00211/full)
+- [bambu-pipe](https://github.com/GoekeLab/bambu-pipe) - [Nextflow] - [Isoform-level discovery, quantification and fusion analysis from single-cell and spatial long-read RNA-seq data with Bambu-Clump](https://www.biorxiv.org/content/10.1101/2024.12.30.630828v1.full)
 - [nf-core/nanoseq](https://github.com/nf-core/nanoseq) - [Nextflow] - [A systematic benchmark of Nanopore long read RNA sequencing for transcript level analysis in human cell lines](https://www.biorxiv.org/content/10.1101/2021.04.21.440736v1) (Not yet updated for ONT's latest chemistry)
 
 ### Metagenomics
