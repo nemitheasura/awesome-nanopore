@@ -50,6 +50,16 @@ List of software packages for Nanopore sequencing data analysis, including basec
 
 ### RNA modification analysis
 
+#### RNA004 Chemistry Compatible Tools 
+
+- [Dorado](https://github.com/nanoporetech/dorado) - [C++] - [Supports calling 8 different RNA modifications: inosine, m6A, 2′OmeA on A; pseU, 2′OmeU on U; m5C, 2′OmeC on C; and 2′OmeG on G as of May 2025](https://software-docs.nanoporetech.com/dorado/1.4.0/models/list/) 
+- [SingleMod](https://github.com/xieyy46/SingleMod-v1) - [Python] - [Single-molecule direct RNA sequencing reveals the shaping of epitranscriptome across multiple species](https://www.nature.com/articles/s41467-025-60447-4)
+- [m6anet](https://github.com/GoekeLab/m6anet) - [Python] - [Detection of m6A from direct RNA sequencing using a multiple instance learning framework](https://www.nature.com/articles/s41592-022-01666-1).
+- [MoDorado](https://github.com/KleistLab/MoDorado) - [Python] - [MoDorado: enhanced detection of tRNA modifications in nanopore sequencing by off-label use of modification callers](https://academic.oup.com/nar/article/53/15/gkaf795/8237893)
+
+
+#### RNA002 Chemistry Compatible Tools
+
 - [MINES](https://github.com/YeoLab/MINES) - [Python] - [Direct RNA sequencing enables m6A detection in endogenous transcript isoforms at base specific resolution](https://rnajournal.cshlp.org/content/early/2019/10/17/rna.072785.119).
 - [EpiNano](https://github.com/novoalab/EpiNano) - [Python] - [Accurate detection of m6A RNA modifications in native RNA sequences](https://www.nature.com/articles/s41467-019-11713-9).
 - [Nanom6A](https://github.com/gaoyubang/nanom6A) - [Python] - [Quantitative profiling of N6-methyladenosine at single-base resolution in stem-differentiating xylem of Populus trichocarpa using Nanopore direct RNA sequencing](https://genomebiology.biomedcentral.com/articles/10.1186/s13059-020-02241-7).
@@ -61,13 +71,13 @@ List of software packages for Nanopore sequencing data analysis, including basec
 - [DiffErr](https://github.com/bartongroup/differr_nanopore_DRS) - [Python] - A tool for detecting modifications from Nanopore DRS errors using a low modification control.
 - [ELIGOS](https://gitlab.com/piroonj/eligos2) - [Python] - [Decoding the epitranscriptional landscape from native RNA sequences](https://academic.oup.com/nar/article/49/2/e7/5876284).
 - [nanoDoc](https://github.com/uedaLabR/nanoDoc) - [Python] - [nanoDoc: RNA modification detection using Nanopore raw reads with Deep One-Class Classification](https://www.biorxiv.org/content/10.1101/2020.09.13.295089v1).
-- [nanocompore](https://github.com/tleonardi/nanocompore) - [Python] - [RNA modifications detection by comparative Nanopore direct RNA sequencing](https://www.biorxiv.org/content/10.1101/843136v1).
-- [DRUMMER](https://github.com/DepledgeLab/DRUMMER) - [Python] - [Direct RNA sequencing reveals m6A modifications on adenovirus RNA are necessary for efficient splicing](https://www.nature.com/articles/s41467-020-19787-6.pdf?origin=ppub).
+- [nanocompore](https://github.com/tleonardi/nanocompore) - [Python] - [RNA modifications detection by comparative Nanopore direct RNA sequencing](https://www.nature.com/articles/s41467-021-27393-3).
+- [DRUMMER](https://github.com/DepledgeLab/DRUMMER) - [Python] - [DRUMMER—rapid detection of RNA modifications through comparative nanopore sequencing](https://academic.oup.com/bioinformatics/article/38/11/3113/6569078).
 - [xPore](https://github.com/GoekeLab/xpore) - [Python] - [Identification of differential RNA modifications from nanopore direct RNA sequencing with xPore](https://doi.org/10.1038/s41587-021-00949-w).
 - [Magnipore](https://github.com/rnajena/magnipore) - [Python] - [Magnipore: Prediction of differential single nucleotide changes in the Oxford Nanopore Technologies sequencing signal of SARS-CoV-2 samples](https://doi.org/10.1101/2023.03.17.533105)
 - [DENA](https://github.com/weir12/DENA) - [Python/R] - [DENA: training an authentic neural network model using Nanopore sequencing data of Arabidopsis transcripts for detection and quantification of N6-methyladenosine on RNA](https://doi.org/10.1186/s13059-021-02598-3)
-- [mAFiA](https://github.com/dieterich-lab/mAFiA) - [Python] - [Detecting m6A at single-molecular resolution via direct RNA sequencing and realistic training data](https://doi.org/10.1038/s41467-024-47661-2)
 - [Penguin](https://github.com/Janga-Lab/Penguin) - [Python] - [Penguin: A Tool for Predicting Pseudouridine Sites in Direct RNA Nanopore Sequencing Data](https://doi.org/10.1016/j.ymeth.2022.02.005)
+- [TandemMod] (https://github.com/yulab2021/TandemMod) - [Python] - [Transfer learning enables identification of multiple types of RNA modifications using nanopore direct RNA sequencing](https://www.nature.com/articles/s41467-024-48437-4)
 
 ### RNA structure prediction
 
@@ -125,6 +135,7 @@ List of software packages for Nanopore sequencing data analysis, including basec
 - [tombo detect_modifications](https://nanoporetech.github.io/tombo/modified_base_detection.html) - [Python] - [(previously nanoraw)De novo Identification of DNA Modifications Enabled by Genome-Guided Nanopore Signal Processing](https://www.biorxiv.org/content/10.1101/094672v2).
 - [Megalodon](https://github.com/nanoporetech/megalodon) - [C++] - Research modified base caller which uses rerio, remora and a genome (deprecated by ONT 2023 for Dorado).
 - [modbam2bed](https://github.com/epi2me-labs/modbam2bed) - [C++] - Convert modified base calls from megalodon etc to bedMethyl format (deprecated by ONT 2023 for Modkit)
+- [mAFiA](https://github.com/dieterich-lab/mAFiA) - [Python] - [Detecting m6A at single-molecular resolution via direct RNA sequencing and realistic training data](https://doi.org/10.1038/s41467-024-47661-2) (Superseded by Ψ-co-mAFiA as of Jan 2025)
 
 
 ## Contributing
