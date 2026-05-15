@@ -89,6 +89,7 @@ List of software packages for Nanopore sequencing data analysis, including basec
 - [tailfindr](https://github.com/adnaniazi/tailfindr) - [R] - [tailfindr: Alignment-free poly(A) length measurement for Oxford Nanopore RNA and DNA sequencing](https://rnajournal.cshlp.org/content/early/2019/07/02/rna.071332.119).
 
 ### Transcript discovery and quantification
+
 - [RNAbloom2](https://github.com/bcgsc/RNA-Bloom) - [Java] - [Reference-free assembly of long-read transcriptome sequencing data with RNA-Bloom2](https://www.nature.com/articles/s41467-023-38553-y)
 - [RATTLE](https://github.com/comprna/RATTLE/) - [C++] - [RATTLE: reference-free reconstruction and quantification of transcriptomes from Nanopore sequencing](https://genomebiology.biomedcentral.com/articles/10.1186/s13059-022-02715-w)
 - [bambu](https://github.com/GoekeLab/bambu) - [R] - [Context-Aware Transcript Quantification from Long Read RNA-Seq data with Bambu](https://rdcu.be/deluQ)
@@ -107,8 +108,10 @@ List of software packages for Nanopore sequencing data analysis, including basec
 - [SquiggleKit SquigglePlot](https://github.com/Psy-Fer/SquiggleKit) - [Python] - [SquiggleKit: a toolkit for manipulating nanopore signal data](https://academic.oup.com/bioinformatics/article/35/24/5372/5537108)
 
 ### Genome Assembly
+
 - [Flye](https://github.com/fenderglass/Flye) - [C++] - Single molecule sequence assembler with good polishing capabilities
 - [Shasta](https://github.com/paoloshasta/shasta) - [C] - Very fast and capable nanopore assembler 
+- [Autocycler](https://github.com/rrwick/Autocycler) - [Rust] - [Autocycler: long-read consensus assembly for bacterial genomes](https://academic.oup.com/bioinformatics/article/41/9/btaf474/8242761)
 
 ### Single-cell analysis
 
