@@ -8,7 +8,13 @@ List of software packages for Nanopore sequencing data analysis, including basec
 
 ### Basecalling
 
+#### ONT basecallers
+
 - [Dorado](https://github.com/nanoporetech/dorado) - [C++] - Production basecaller from 2022, successor to Guppy.
+- [Bonito](https://github.com/nanoporetech/bonito) - [Python] - A PyTorch Basecaller for Oxford Nanopore Reads (research, not production basecaller)
+
+#### Reserch Basecallers (2016 - 2021)
+
 - [Nanocall](https://github.com/mateidavid/nanocall) - [C++] - [Nanocall: an open source basecaller for Oxford Nanopore sequencing data](https://academic.oup.com/bioinformatics/article/33/1/49/2525680)
 - [PoreSeq](https://github.com/tszalay/poreseq) - [C++] - [De novo sequencing and variant calling with nanopores using PoreSeq](https://www.nature.com/articles/nbt.3360)
 - [Nanonet](https://github.com/ProgramFiles/nanonet) - [C++] - [Nanonet - Development version of RNN basecaller](https://github.com/ProgramFiles/nanonet)
@@ -16,7 +22,6 @@ List of software packages for Nanopore sequencing data analysis, including basec
 - BasecRAWller - [Close sourced (May request code by emailing IPO@lbl.gov)] - [BasecRAWller: Streaming Nanopore Basecalling Directly from Raw Signal](https://www.biorxiv.org/content/10.1101/133058v1)
 - [Chiron](https://github.com/haotianteng/Chiron) - [Python] - [Chiron: translating nanopore raw signal directly into nucleotide sequence using deep learning](https://academic.oup.com/gigascience/article/7/5/giy037/4966989)
 - [Causalcall](https://github.com/scutbioinformatic/causalcall) - [Python] - [Causalcall: Nanopore Basecalling Using a Temporal Convolutional Network](https://www.frontiersin.org/articles/10.3389/fgene.2019.01332/full)
-- [Bonito](https://github.com/nanoporetech/bonito) - [Python] - A PyTorch Basecaller for Oxford Nanopore Reads (research, not production basecaller)
 
 ### QC, preprocessing
 
