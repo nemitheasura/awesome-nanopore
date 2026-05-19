@@ -4,6 +4,34 @@
 
 List of software packages for Nanopore sequencing data analysis, including basecalling, DNA/RNA modifications, etc. [Contributions welcome](https://github.com/goekelab/awesome-nanopore#contributing)...
 
+## Table of contents
+
+- [Software packages](#software-packages)
+  - [Basecalling](#basecalling)
+  - [QC, preprocessing](#qc-preprocessing)
+  - [Alignment](#alignment)
+  - [Variant, SV calling, Phasing](#variant-sv-calling-phasing)
+  - [Adaptive sampling / ReadUntil / signal mapping](#adaptive-sampling--readuntil-real-time-mapping--signal-mapping)
+  - [Segmentation](#segmentation)
+  - [DNA modification analysis](#dna-modification-analysis)
+  - [RNA modification analysis](#rna-modification-analysis)
+  - [RNA structure prediction](#rna-structure-prediction)
+  - [Poly(A) tail length estimation](#polya-tail-length-estimation)
+  - [Transcript discovery and quantification](#transcript-discovery-and-quantification)
+  - [Raw signal data manipulation](#raw-signal-data-manipulation-conversion-visualisation-etc)
+  - [Genome Assembly](#genome-assembly)
+  - [Single-cell analysis](#single-cell-analysis)
+  - [Reads simulation](#reads-simulation)
+  - [Coverage simulation](#coverage-simulation)
+  - [Polishing, Error correction](#polishing-error-correction)
+- [Pipelines](#pipelines)
+  - [Metagenomics](#metagenomics)
+- [Deprecated / superseded](#deprecated--superseded)
+- [Contributing](#contributing)
+- [Citation](#citation)
+- [What is an awesome list?](#what-is-an-awesome-list)
+- [Contact](#contact)
+
 ## Software packages
 
 ### Basecalling
