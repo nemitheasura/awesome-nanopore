@@ -186,4 +186,4 @@ Wan, Y.K., Hendra, C., Pratanwanich, P.N. & Göke, J. Beyond sequencing: machine
 According to [the official awesome Github repository](https://github.com/sindresorhus/awesome), an awesome list on GitHub is "a curation of actual awesome stuff", so an awesome list only includes items that has been researched by a contributor who would personally recommend the items. To learn more, please read [the official awesome manifesto](https://github.com/sindresorhus/awesome/blob/main/awesome.md).
 
 ## Contact
-This repository was created by [Yuk Kei Wan](https://github.com/yuukiiwa).
+This repository is maintained by [Clare Robinson](https://github.com/ClareRobin) and was originally created by [Yuk Kei Wan](https://github.com/yuukiiwa).
