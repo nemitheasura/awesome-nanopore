@@ -13,7 +13,7 @@ List of software packages for Nanopore sequencing data analysis, including basec
 - [Dorado](https://github.com/nanoporetech/dorado) - [C++] - Production basecaller from 2022, successor to Guppy.
 - [Bonito](https://github.com/nanoporetech/bonito) - [Python] - A PyTorch Basecaller for Oxford Nanopore Reads (research, not production basecaller)
 
-#### Reserch Basecallers (2016 - 2021)
+#### Research Basecallers (2016 - 2021)
 
 - [Nanocall](https://github.com/mateidavid/nanocall) - [C++] - [Nanocall: an open source basecaller for Oxford Nanopore sequencing data](https://academic.oup.com/bioinformatics/article/33/1/49/2525680)
 - [PoreSeq](https://github.com/tszalay/poreseq) - [C++] - [De novo sequencing and variant calling with nanopores using PoreSeq](https://www.nature.com/articles/nbt.3360)
@@ -97,11 +97,11 @@ List of software packages for Nanopore sequencing data analysis, including basec
 - [Magnipore](https://github.com/rnajena/magnipore) - [Python] - [Magnipore: Prediction of differential single nucleotide changes in the Oxford Nanopore Technologies sequencing signal of SARS-CoV-2 samples](https://doi.org/10.1101/2023.03.17.533105)
 - [DENA](https://github.com/weir12/DENA) - [Python/R] - [DENA: training an authentic neural network model using Nanopore sequencing data of Arabidopsis transcripts for detection and quantification of N6-methyladenosine on RNA](https://doi.org/10.1186/s13059-021-02598-3)
 - [Penguin](https://github.com/Janga-Lab/Penguin) - [Python] - [Penguin: A Tool for Predicting Pseudouridine Sites in Direct RNA Nanopore Sequencing Data](https://doi.org/10.1016/j.ymeth.2022.02.005)
-- [TandemMod] (https://github.com/yulab2021/TandemMod) - [Python] - [Transfer learning enables identification of multiple types of RNA modifications using nanopore direct RNA sequencing](https://www.nature.com/articles/s41467-024-48437-4)
+- [TandemMod](https://github.com/yulab2021/TandemMod) - [Python] - [Transfer learning enables identification of multiple types of RNA modifications using nanopore direct RNA sequencing](https://www.nature.com/articles/s41467-024-48437-4)
 
 ### RNA structure prediction
 
-- [nanoSHAPE](https://github.com/physnano/rRNA_nanoSHAPE) - [Python] - [Direct detection of RNA modifications and structure using single molecule nanopore sequencing](https://www.biiorxiv.org/content/10.1101/2020.05.31.126763v1).
+- [nanoSHAPE](https://github.com/physnano/rRNA_nanoSHAPE) - [Python] - [Direct detection of RNA modifications and structure using single molecule nanopore sequencing](https://www.biorxiv.org/content/10.1101/2020.05.31.126763v1).
 - [PORE-cupine](https://github.com/awjga/PORE-cupine) - [R] - [Determination of isoform-specific RNA structure with nanopore long reads](https://www.nature.com/articles/s41587-020-0712-z).
 
 ### Poly(A) tail length estimation
@@ -159,10 +159,6 @@ List of software packages for Nanopore sequencing data analysis, including basec
 
 ### Metagenomics
 - [nf-Wochenende](https://github.com/MHH-RCUG/nf_wochenende) - [Nextflow, Python] - [Wochenende - modular and flexible alignment-based shotgun metagenome analysis](https://www.biorxiv.org/content/10.1101/2022.03.18.484377v3)
-
-
-### Reads simulation
-- [NanoSim](https://github.com/bcgsc/NanoSim) - [Python] - [NanoSim: nanopore sequence read simulator based on statistical characterization.](https://doi.org/10.1093/gigascience/gix010), [Trans-NanoSim characterizes and simulates nanopore RNA-sequencing data.](https://academic.oup.com/gigascience/article/9/6/giaa061/5855462?login=true), [Characterization and simulation of metagenomic nanopore sequencing data with Meta-NanoSim.](https://academic.oup.com/gigascience/article/doi/10.1093/gigascience/giad013/7080817?login=true)
 
 
 ## Deprecated / superseded
