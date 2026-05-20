@@ -10,20 +10,25 @@ List of software packages for Nanopore sequencing data analysis, including basec
   - [Basecalling](#basecalling)
   - [QC, preprocessing](#qc-preprocessing)
   - [Alignment](#alignment)
+  - [Signal analysis](#signal-analysis)
+    - [Adaptive sampling / ReadUntil / signal mapping](#adaptive-sampling--readuntil-real-time-mapping--signal-mapping)
+    - [Segmentation](#segmentation)
+    - [Raw signal data manipulation](#raw-signal-data-manipulation-conversion-visualisation-etc)
   - [Variant, SV calling, Phasing](#variant-sv-calling-phasing)
-  - [Adaptive sampling / ReadUntil / signal mapping](#adaptive-sampling--readuntil-real-time-mapping--signal-mapping)
-  - [Segmentation](#segmentation)
-  - [DNA modification analysis](#dna-modification-analysis)
-  - [RNA modification analysis](#rna-modification-analysis)
-  - [RNA structure prediction](#rna-structure-prediction)
-  - [Poly(A) tail length estimation](#polya-tail-length-estimation)
-  - [Transcript discovery and quantification](#transcript-discovery-and-quantification)
-  - [Raw signal data manipulation](#raw-signal-data-manipulation-conversion-visualisation-etc)
-  - [Genome Assembly](#genome-assembly)
-  - [Single-cell analysis](#single-cell-analysis)
-  - [Reads simulation](#reads-simulation)
-  - [Coverage simulation](#coverage-simulation)
-  - [Polishing, Error correction](#polishing-error-correction)
+  - [Modification analysis](#modification-analysis)
+    - [DNA modification analysis](#dna-modification-analysis)
+    - [RNA modification analysis](#rna-modification-analysis)
+  - [Assembly](#assembly)
+    - [Genome Assembly](#genome-assembly)
+    - [Polishing, Error correction](#polishing-error-correction)
+  - [Transcriptomics](#transcriptomics)
+    - [Transcript discovery and quantification](#transcript-discovery-and-quantification)
+    - [Poly(A) tail length estimation](#polya-tail-length-estimation)
+    - [RNA structure prediction](#rna-structure-prediction)
+    - [Single-cell analysis](#single-cell-analysis)
+  - [Simulation](#simulation)
+    - [Reads simulation](#reads-simulation)
+    - [Coverage simulation](#coverage-simulation)
 - [Pipelines](#pipelines)
   - [Metagenomics](#metagenomics)
 - [Deprecated / superseded](#deprecated--superseded)
@@ -56,18 +61,14 @@ List of software packages for Nanopore sequencing data analysis, including basec
 - [NanoPlot](https://github.com/wdecoster/nanoplot) - [HTML/Python] - [QC plotting tool for Nanopore reads](https://academic.oup.com/bioinformatics/article/39/5/btad311/7160911?login=false)
 - [Cramino](https://github.com/wdecoster/cramino) - [Rust] - A tool for quick quality assessment of cram and bam files, intended for long read sequencing
 
-### Alignment 
+### Alignment
 
 - [minimap2](https://github.com/lh3/minimap2) - [C] - [Minimap2: pairwise alignment for nucleotide sequences](https://academic.oup.com/bioinformatics/article/34/18/3094/4994778)
 - [Winnowmap](https://github.com/marbl/winnowmap) - [C] - [Weighted minimizer sampling improves long read mapping](https://academic.oup.com/bioinformatics/article/36/Supplement_1/i111/5870473)
 
-### Variant, SV calling, Phasing
+### Signal analysis
 
-- [Clair3](https://github.com/HKU-BAL/Clair3) - [Python/C++] - [Clair3-RNA: a deep learning-based small variant caller for long-read RNA sequencing data](https://www.nature.com/articles/s41467-025-67237-y)
-- [Sniffles](https://github.com/fritzsedlazeck/sniffles) - [Python] - [Detection of mosaic and population-level structural variants with Sniffles2](https://www.nature.com/articles/s41587-023-02024-y)
-- [whatshap](https://github.com/whatshap/whatshap) - [Python/C++] - [Read-Based Phasing and Analysis of Phased Variants with WhatsHap](https://link.springer.com/protocol/10.1007/978-1-0716-2819-5_8)
-
-### Adaptive sampling / ReadUntil Real-time mapping / signal mapping
+#### Adaptive sampling / ReadUntil Real-time mapping / signal mapping
 
 - [Readfish](https://github.com/LooseLab/readfish) - [Python] - [Readfish enables targeted nanopore sequencing of gigabase-sized genomes](https://www.nature.com/articles/s41587-020-00746-x)
 - [UNCALLED](https://github.com/skovaka/UNCALLED) - [C++] - [Targeted nanopore sequencing by real-time mapping of raw electrical signal with UNCALLED](https://www.nature.com/articles/s41587-020-0731-9)
@@ -77,7 +78,7 @@ List of software packages for Nanopore sequencing data analysis, including basec
 - [OpenDBA](https://github.com/nodrogluap/OpenDBA) - [C++/CUDA] - [GPU-accelerated Dynamic Time Warp (DTW) Barycenter Averaging](https://github.com/nodrogluap/OpenDBA#how-do-i-use-this-for-oxford-nanopore-data)
 - [Magenta & Maxwell](https://github.com/nodrogluap/maxwell) - [C++/CUDA] - [Fast signal-level matching for direct RNA nanopore sequencing](https://github.com/nodrogluap/maxwell)
 
-### Segmentation
+#### Segmentation
 
 - [nanopolish eventalign](https://github.com/jts/nanopolish) - [C++] - [Detecting DNA cytosine methylation using nanopore sequencing](https://www.nature.com/articles/nmeth.4184).
 - [f5c eventalign](https://github.com/hasindu2008/f5c) - [C/C++/CUDA] - [GPU accelerated adaptive banded event alignment for rapid comparative nanopore signal analysis](https://bmcbioinformatics.biomedcentral.com/articles/10.1186/s12859-020-03697-x)
@@ -86,7 +87,25 @@ List of software packages for Nanopore sequencing data analysis, including basec
 - [Dynamont](https://github.com/rnajena/dynamont) - [Python/C++] - A Dynamic Programming Approach to Segment ONT Signals
 - [Uncalled4](https://github.com/skovaka/uncalled4) - [Python/C++] - [Uncalled4 improves nanopore DNA and RNA modification detection via fast and accurate signal alignment](https://doi.org/10.1101/2024.03.05.583511)
 
-### DNA modification analysis
+#### Raw signal data manipulation, conversion, visualisation, etc.
+
+- [slow5lib](https://github.com/hasindu2008/slow5lib) - [C] - [Fast nanopore sequencing data analysis with SLOW5
+](https://www.nature.com/articles/s41587-021-01147-4)
+- [pyslow5](https://pypi.org/project/pyslow5/) - [Python] - [pyslow5 python library
+](https://hasindu2008.github.io/slow5lib/pyslow5_api/pyslow5.html)
+- [slow5tools](https://github.com/hasindu2008/slow5tools) - [C/C++] - [Toolkit for converting (FAST5 <-> SLOW5), compressing, viewing, indexing and manipulating data in SLOW5 format](https://hasindu2008.github.io/slow5tools/)
+- [SquiggleKit SquigglePlot](https://github.com/Psy-Fer/SquiggleKit) - [Python] - [SquiggleKit: a toolkit for manipulating nanopore signal data](https://academic.oup.com/bioinformatics/article/35/24/5372/5537108)
+- [Squigualiser](https://github.com/hiruna72/squigualiser) - [Python] - [Interactive visualization of nanopore sequencing signal data with Squigualiser](doi.org/10.1093/bioinformatics/btae501)
+
+### Variant, SV calling, Phasing
+
+- [Clair3](https://github.com/HKU-BAL/Clair3) - [Python/C++] - [Clair3-RNA: a deep learning-based small variant caller for long-read RNA sequencing data](https://www.nature.com/articles/s41467-025-67237-y)
+- [Sniffles](https://github.com/fritzsedlazeck/sniffles) - [Python] - [Detection of mosaic and population-level structural variants with Sniffles2](https://www.nature.com/articles/s41587-023-02024-y)
+- [whatshap](https://github.com/whatshap/whatshap) - [Python/C++] - [Read-Based Phasing and Analysis of Phased Variants with WhatsHap](https://link.springer.com/protocol/10.1007/978-1-0716-2819-5_8)
+
+### Modification analysis
+
+#### DNA modification analysis
 
 - [modkit](https://github.com/nanoporetech/modkit) - [Rust] - Extract modified base calls from dorado BAM output to bedMethyl format, also calculate DMRs
 - [nanopolish call-methylation](https://github.com/jts/nanopolish) - [C++] - [Detecting DNA cytosine methylation using nanopore sequencing](https://www.nature.com/articles/nmeth.4184).
@@ -97,22 +116,21 @@ List of software packages for Nanopore sequencing data analysis, including basec
 - [DeepSignals](https://github.com/bioinfomaticsCSU/deepsignal) - [Python] - [DeepSignal: detecting DNA methylation state from Nanopore sequencing reads using deep-learning](https://academic.oup.com/bioinformatics/article/35/22/4586/5474907).
 - [NanoMod](https://github.com/WGLab/NanoMod) - [Python] - [NanoMod: a computational tool to detect DNA modifications using Nanopore long-read sequencing data](https://bmcgenomics.biomedcentral.com/articles/10.1186/s12864-018-5372-8).
 
-### RNA modification analysis
+#### RNA modification analysis
 
-#### RNA004 Chemistry Compatible Tools 
+##### RNA004 Chemistry Compatible Tools
 
-- [Dorado](https://github.com/nanoporetech/dorado) - [C++] - [Supports calling 8 different RNA modifications: inosine, m6A, 2′OmeA on A; pseU, 2′OmeU on U; m5C, 2′OmeC on C; and 2′OmeG on G as of May 2025](https://software-docs.nanoporetech.com/dorado/1.4.0/models/list/) 
+- [Dorado](https://github.com/nanoporetech/dorado) - [C++] - [Supports calling 8 different RNA modifications: inosine, m6A, 2′OmeA on A; pseU, 2′OmeU on U; m5C, 2′OmeC on C; and 2′OmeG on G as of May 2025](https://software-docs.nanoporetech.com/dorado/1.4.0/models/list/)
 - [SingleMod](https://github.com/xieyy46/SingleMod-v1) - [Python] - [Single-molecule direct RNA sequencing reveals the shaping of epitranscriptome across multiple species](https://www.nature.com/articles/s41467-025-60447-4)
 - [m6anet](https://github.com/GoekeLab/m6anet) - [Python] - [Detection of m6A from direct RNA sequencing using a multiple instance learning framework](https://www.nature.com/articles/s41592-022-01666-1).
 - [MoDorado](https://github.com/KleistLab/MoDorado) - [Python] - [MoDorado: enhanced detection of tRNA modifications in nanopore sequencing by off-label use of modification callers](https://academic.oup.com/nar/article/53/15/gkaf795/8237893)
 
-
-#### RNA002 Chemistry Compatible Tools
+##### RNA002 Chemistry Compatible Tools
 
 - [MINES](https://github.com/YeoLab/MINES) - [Python] - [Direct RNA sequencing enables m6A detection in endogenous transcript isoforms at base specific resolution](https://rnajournal.cshlp.org/content/early/2019/10/17/rna.072785.119).
 - [EpiNano](https://github.com/novoalab/EpiNano) - [Python] - [Accurate detection of m6A RNA modifications in native RNA sequences](https://www.nature.com/articles/s41467-019-11713-9).
 - [Nanom6A](https://github.com/gaoyubang/nanom6A) - [Python] - [Quantitative profiling of N6-methyladenosine at single-base resolution in stem-differentiating xylem of Populus trichocarpa using Nanopore direct RNA sequencing](https://genomebiology.biomedcentral.com/articles/10.1186/s13059-020-02241-7).
-- [NanoNm](https://github.com/kaifuchenlab/NanoNm) - [Python] - [A Machine Learning Method to detect the 2'-O-methylation(Nm) in Nanopore direct RNA-seq](https://doi.org/10.1016/j.molcel.2024.04.011) 
+- [NanoNm](https://github.com/kaifuchenlab/NanoNm) - [Python] - [A Machine Learning Method to detect the 2'-O-methylation(Nm) in Nanopore direct RNA-seq](https://doi.org/10.1016/j.molcel.2024.04.011)
 - [m6anet](https://github.com/GoekeLab/m6anet) - [Python] - [Detection of m6A from direct RNA sequencing using a multiple instance learning framework](https://www.nature.com/articles/s41592-022-01666-1).
 - [nanoRMS](https://github.com/novoalab/nanoRMS) - [Python] - [Quantitative profiling of pseudouridylation dynamics in native RNAs with nanopore sequencing](https://www.nature.com/articles/s41587-021-00915-6?proof=t%3B).
 - [Yanocomp](https://github.com/bartongroup/yanocomp) - [Python] - [Yanocomp: robust prediction of m6A modifications in individual nanopore direct RNA reads](https://www.biorxiv.org/content/10.1101/2021.06.15.448494v1).
@@ -127,17 +145,23 @@ List of software packages for Nanopore sequencing data analysis, including basec
 - [Penguin](https://github.com/Janga-Lab/Penguin) - [Python] - [Penguin: A Tool for Predicting Pseudouridine Sites in Direct RNA Nanopore Sequencing Data](https://doi.org/10.1016/j.ymeth.2022.02.005)
 - [TandemMod](https://github.com/yulab2021/TandemMod) - [Python] - [Transfer learning enables identification of multiple types of RNA modifications using nanopore direct RNA sequencing](https://www.nature.com/articles/s41467-024-48437-4)
 
-### RNA structure prediction
+### Assembly
 
-- [nanoSHAPE](https://github.com/physnano/rRNA_nanoSHAPE) - [Python] - [Direct detection of RNA modifications and structure using single molecule nanopore sequencing](https://www.biorxiv.org/content/10.1101/2020.05.31.126763v1).
-- [PORE-cupine](https://github.com/awjga/PORE-cupine) - [R] - [Determination of isoform-specific RNA structure with nanopore long reads](https://www.nature.com/articles/s41587-020-0712-z).
+#### Genome Assembly
 
-### Poly(A) tail length estimation
+- [Verkko](https://github.com/marbl/verkko) - [Python] - hybrid genome assembly pipeline developed for telomere-to-telomere assembly of accurate long reads (PacBio HiFi, Oxford Nanopore Duplex, HERRO or Hifiasm corrected Oxford Nanopore Simplex) and Oxford Nanopore ultra-long reads. [Telomere-to-telomere assembly of diploid chromosomes with Verkko](https://www.nature.com/articles/s41587-023-01662-6)
+- [Flye](https://github.com/fenderglass/Flye) - [C++] - Single molecule sequence assembler with good polishing capabilities
+- [Shasta](https://github.com/paoloshasta/shasta) - [C] - Very fast and capable nanopore assembler
+- [Autocycler](https://github.com/rrwick/Autocycler) - [Rust] - [Autocycler: long-read consensus assembly for bacterial genomes](https://academic.oup.com/bioinformatics/article/41/9/btaf474/8242761)
 
-- [nanopolish polya](https://github.com/jts/nanopolish) - [C++] - [Nanopore native RNA sequencing of a human poly(A) transcriptome](https://www.nature.com/articles/s41592-019-0617-2?proof=t).
-- [tailfindr](https://github.com/adnaniazi/tailfindr) - [R] - [tailfindr: Alignment-free poly(A) length measurement for Oxford Nanopore RNA and DNA sequencing](https://rnajournal.cshlp.org/content/early/2019/07/02/rna.071332.119).
+#### Polishing, Error correction
 
-### Transcript discovery and quantification
+- [Medaka](https://github.com/nanoporetech/medaka) - [Python] - ONT's official polisher
+- [Herro](https://github.com/lbcb-sci/herro) - [Rust] - [Telomere-to-Telomere Assembly Using HERRO-Corrected Simplex Nanopore Reads](https://www.nature.com/articles/s41586-026-10563-y)
+
+### Transcriptomics
+
+#### Transcript discovery and quantification
 
 - [RNAbloom2](https://github.com/bcgsc/RNA-Bloom) - [Java] - [Reference-free assembly of long-read transcriptome sequencing data with RNA-Bloom2](https://www.nature.com/articles/s41467-023-38553-y)
 - [RATTLE](https://github.com/comprna/RATTLE/) - [C++] - [RATTLE: reference-free reconstruction and quantification of transcriptomes from Nanopore sequencing](https://genomebiology.biomedcentral.com/articles/10.1186/s13059-022-02715-w)
@@ -148,36 +172,29 @@ List of software packages for Nanopore sequencing data analysis, including basec
 - [trackcluster](https://github.com/runsheng/trackcluster) -[Python] - [trackcluster is an isoform calling and quantification pipeline for long RNA/cDNA reads](https://genome.cshlp.org/content/30/2/287.short)
 - [FLAIR](https://github.com/BrooksLabUCSC/FLAIR) - [Python] - [Full-Length Alternative Isoform analysis of RNA](https://www.nature.com/articles/s41467-020-15171-6)
 
-### Raw signal data manipulation, conversion, visualisation, etc.
+#### Poly(A) tail length estimation
 
-- [slow5lib](https://github.com/hasindu2008/slow5lib) - [C] - [Fast nanopore sequencing data analysis with SLOW5
-](https://www.nature.com/articles/s41587-021-01147-4)
-- [pyslow5](https://pypi.org/project/pyslow5/) - [Python] - [pyslow5 python library
-](https://hasindu2008.github.io/slow5lib/pyslow5_api/pyslow5.html)
-- [slow5tools](https://github.com/hasindu2008/slow5tools) - [C/C++] - [Toolkit for converting (FAST5 <-> SLOW5), compressing, viewing, indexing and manipulating data in SLOW5 format](https://hasindu2008.github.io/slow5tools/)
-- [SquiggleKit SquigglePlot](https://github.com/Psy-Fer/SquiggleKit) - [Python] - [SquiggleKit: a toolkit for manipulating nanopore signal data](https://academic.oup.com/bioinformatics/article/35/24/5372/5537108)
-- [Squigualiser](https://github.com/hiruna72/squigualiser) - [Python] - [Interactive visualization of nanopore sequencing signal data with Squigualiser](doi.org/10.1093/bioinformatics/btae501)
+- [nanopolish polya](https://github.com/jts/nanopolish) - [C++] - [Nanopore native RNA sequencing of a human poly(A) transcriptome](https://www.nature.com/articles/s41592-019-0617-2?proof=t).
+- [tailfindr](https://github.com/adnaniazi/tailfindr) - [R] - [tailfindr: Alignment-free poly(A) length measurement for Oxford Nanopore RNA and DNA sequencing](https://rnajournal.cshlp.org/content/early/2019/07/02/rna.071332.119).
 
-### Genome Assembly
+#### RNA structure prediction
 
-- [Verkko](https://github.com/marbl/verkko) - [Python] - hybrid genome assembly pipeline developed for telomere-to-telomere assembly of accurate long reads (PacBio HiFi, Oxford Nanopore Duplex, HERRO or Hifiasm corrected Oxford Nanopore Simplex) and Oxford Nanopore ultra-long reads. [Telomere-to-telomere assembly of diploid chromosomes with Verkko](https://www.nature.com/articles/s41587-023-01662-6)
-- [Flye](https://github.com/fenderglass/Flye) - [C++] - Single molecule sequence assembler with good polishing capabilities
-- [Shasta](https://github.com/paoloshasta/shasta) - [C] - Very fast and capable nanopore assembler 
-- [Autocycler](https://github.com/rrwick/Autocycler) - [Rust] - [Autocycler: long-read consensus assembly for bacterial genomes](https://academic.oup.com/bioinformatics/article/41/9/btaf474/8242761)
+- [nanoSHAPE](https://github.com/physnano/rRNA_nanoSHAPE) - [Python] - [Direct detection of RNA modifications and structure using single molecule nanopore sequencing](https://www.biorxiv.org/content/10.1101/2020.05.31.126763v1).
+- [PORE-cupine](https://github.com/awjga/PORE-cupine) - [R] - [Determination of isoform-specific RNA structure with nanopore long reads](https://www.nature.com/articles/s41587-020-0712-z).
 
-### Single-cell analysis
+#### Single-cell analysis
 
 - [BLAZE](https://github.com/shimlab/BLAZE) - [Python] - [Identification of cell barcodes from long-read single-cell RNA-seq with BLAZE](https://www.biorxiv.org/content/10.1101/2022.08.16.504056v1)
 
-### Reads simulation
+### Simulation
+
+#### Reads simulation
+
 - [NanoSim](https://github.com/bcgsc/NanoSim) - [Python] - [NanoSim: nanopore sequence read simulator based on statistical characterization.](https://doi.org/10.1093/gigascience/gix010), [Trans-NanoSim characterizes and simulates nanopore RNA-sequencing data.](https://academic.oup.com/gigascience/article/9/6/giaa061/5855462?login=true), [Characterization and simulation of metagenomic nanopore sequencing data with Meta-NanoSim.](https://academic.oup.com/gigascience/article/doi/10.1093/gigascience/giad013/7080817?login=true)
 
-### Coverage simulation
-- [esloco](https://github.com/aweich/esloco) - [Python] - [esloco: simulation-based estimation of local coverage in long-read DNA sequencing](https://academic.oup.com/bioinformatics/advance-article/doi/10.1093/bioinformatics/btag009/8418384)
+#### Coverage simulation
 
-### Polishing, Error correction
-- [Medaka](https://github.com/nanoporetech/medaka) - [Python] - ONT's official polisher
-- [Herro](https://github.com/lbcb-sci/herro) - [Rust] - [Telomere-to-Telomere Assembly Using HERRO-Corrected Simplex Nanopore Reads](https://www.nature.com/articles/s41586-026-10563-y)
+- [esloco](https://github.com/aweich/esloco) - [Python] - [esloco: simulation-based estimation of local coverage in long-read DNA sequencing](https://academic.oup.com/bioinformatics/advance-article/doi/10.1093/bioinformatics/btag009/8418384)
 
 ## Pipelines
 
